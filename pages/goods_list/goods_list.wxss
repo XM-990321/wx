@@ -1,0 +1,29 @@
+.tt_tab .tt_item {
+  display: flex;
+  border-bottom: 1rpx solid #cccccc;
+}
+.tt_tab .tt_item .img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tt_tab .tt_item .img_wrap image {
+  width: 70%;
+}
+.tt_tab .tt_item .info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tt_tab .tt_item .info_wrap .wrap_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.tt_tab .tt_item .info_wrap .wrap_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

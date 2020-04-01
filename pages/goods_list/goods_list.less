@@ -1,0 +1,31 @@
+.tt_tab{
+  .tt_item{
+    display: flex;
+    border-bottom: 1rpx solid #cccccc;
+    .img_wrap{
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      image{
+        width: 70%;
+      }
+    }
+    .info_wrap{
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .wrap_name{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .wrap_price{
+        color: var(--themeColor);
+        font-size: 32rpx;
+      }
+    }
+  }
+}

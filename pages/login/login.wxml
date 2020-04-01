@@ -1,0 +1,2 @@
+
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" > 微信快捷登录 </button>

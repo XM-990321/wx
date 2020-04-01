@@ -1,0 +1,29 @@
+<view class="tt_goods">
+  <SearchInput></SearchInput>
+  <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+      <view class="tt_tab">
+        <navigator class="tt_item" wx:for="{{goodsList}}" wx:key="goods_id" url="/pages/goos_detail/goos_detail?goods_id={{item.goods_id}}">
+          <!-- 左侧图片 -->
+          <view class="img_wrap">
+            <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"/>        
+          </view>
+          <!-- 右侧商品 -->
+          <view class="info_wrap">
+            <view class="wrap_name">
+              {{item.goods_name}}
+            </view>
+            <view class="wrap_price">
+              ￥{{item.goods_price}}
+            </view>
+          </view>
+        </navigator>
+          
+      </view>
+        
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">1</block>
+    <block wx:else>2</block>
+  </Tabs>
+</view>
+  
